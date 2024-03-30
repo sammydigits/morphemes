@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customRadioHidden > span {
+  display: none;
+}
+.customRadioHidden > div {
+  margin-left: 0;
+}
+.closeChipContainer > div > span:first-child {
+  display: none;
+}
+.wavyRed {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+}
+.baseSelectWidth {
+  width: 150px;
+}
+
+#sections div {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+#sections div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#sections div:nth-child(3) {
+  animation-delay: 0.75s;
+}
+#sections div:nth-child(4) {
+  animation-delay: 1s;
+}
+#sections div:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
