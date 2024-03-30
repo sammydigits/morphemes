@@ -14,68 +14,67 @@ import { CheckIcon } from "@/components/icons";
 import { SectionWrapper } from "@/components/section-wrapper";
 import { CustomRadio } from "@/components/custom-radio";
 
-export const prefixes = [
-  {
-    value: "as",
-  },
-  {
-    value: "de",
-  },
-  {
-    value: "re",
-  },
-];
-
-export const baseWords = [
-  {
-    label: "Sign",
-    value: "sign",
-    latin: "signare",
-    description: "mark, print or motion of the hand",
-    requiresSubscription: false,
-  },
-  {
-    label: "Ject",
-    value: "ject",
-    latin: "latin needed here",
-    description: "description needed here",
-    requiresSubscription: true,
-  },
-  {
-    label: "Example2",
-    value: "example2",
-    latin: "latin needed here",
-    description: "description needed here",
-    requiresSubscription: true,
-  },
-  {
-    label: "Example3",
-    value: "example3",
-    latin: "latin needed here",
-    description: "description needed here",
-    requiresSubscription: true,
-  },
-];
-
-export const suffixes = [
-  {
-    value: "al",
-  },
-  {
-    value: "ed",
-  },
-  {
-    value: "er",
-  },
-  {
-    value: "ing",
-  },
-  {
-    value: "ment",
-  },
-];
-
 export default function Home() {
+  const prefixes = [
+    {
+      value: "as",
+    },
+    {
+      value: "de",
+    },
+    {
+      value: "re",
+    },
+  ];
+
+  const baseWords = [
+    {
+      label: "Sign",
+      value: "sign",
+      latin: "signare",
+      description: "mark, print or motion of the hand",
+      requiresSubscription: false,
+    },
+    {
+      label: "Ject",
+      value: "ject",
+      latin: "latin needed here",
+      description: "description needed here",
+      requiresSubscription: true,
+    },
+    {
+      label: "Example2",
+      value: "example2",
+      latin: "latin needed here",
+      description: "description needed here",
+      requiresSubscription: true,
+    },
+    {
+      label: "Example3",
+      value: "example3",
+      latin: "latin needed here",
+      description: "description needed here",
+      requiresSubscription: true,
+    },
+  ];
+
+  const suffixes = [
+    {
+      value: "al",
+    },
+    {
+      value: "ed",
+    },
+    {
+      value: "er",
+    },
+    {
+      value: "ing",
+    },
+    {
+      value: "ment",
+    },
+  ];
   const validWords = new Set([
     "assign",
     "design",
